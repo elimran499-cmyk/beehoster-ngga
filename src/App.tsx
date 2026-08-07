@@ -51,7 +51,7 @@ export default function App() {
         <ChannelExplorer onOpenOrderModal={handleOpenOrderModal} />
 
         {/* Subscription Pricing Plans */}
-        <Pricing onOpenOrderModal={handleOpenOrderModal} />
+        <Pricing />
 
         {/* Compatible Devices Banner */}
         <DeviceBanner onOpenOrderModal={handleOpenOrderModal} />
