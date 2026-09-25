@@ -1,14 +1,48 @@
 <!doctype html>
 <html lang="nl" class="scroll-smooth">
   <head>
+    <!-- Google tag (gtag.js).
+         The stub runs inline and immediately: it defines gtag() and queues every
+         call into dataLayer, so conversions fired before the remote tag lands are
+         kept and replayed. That lets the 100 KB gtag.js itself wait — as the very
+         first element in <head> the preload scanner would fetch it ahead of the
+         fonts and the app bundle, spending the opening round-trips of the visit on
+         a script that paints nothing. It is pulled in on whichever comes first:
+         window load, or the first sign of a user who might convert. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18345460239');
+
+      (function () {
+        var loaded = false;
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18345460239';
+          document.head.appendChild(s);
+        }
+        var events = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+        events.forEach(function (e) {
+          window.addEventListener(e, loadGtag, {once: true, passive: true, capture: true});
+        });
+        if (document.readyState === 'complete') loadGtag();
+        else window.addEventListener('load', loadGtag, {once: true});
+      })();
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEEHOSTER — Officiële website | 80.000+ live tv-zenders & VOD in 4K UHD</title>
     <meta name="description" content="De officiële website van BEEHOSTER. Kijk 80.000+ live tv-zenders en 95.000+ films in 4K UHD. Geen buffering, Anti-Freeze-technologie, 99,9% uptime en activatie binnen 5 minuten via WhatsApp." />
     <link rel="canonical" href="https://beehoster.net/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="apple-touch-icon" href="/logo.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nl_NL" />
@@ -16,11 +50,11 @@
     <meta property="og:title" content="BEEHOSTER — Officiële website | 80.000+ live tv-zenders in 4K UHD" />
     <meta property="og:description" content="Kijk 80.000+ live tv-zenders en 200.000+ films en series in 4K UHD. Activatie binnen 5 minuten via WhatsApp, altijd opzegbaar." />
     <meta property="og:url" content="https://beehoster.net/" />
-    <meta property="og:image" content="https://beehoster.net/logo.svg" />
+    <meta property="og:image" content="https://beehoster.net/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="BEEHOSTER — Officiële website | 80.000+ live tv-zenders in 4K UHD" />
     <meta name="twitter:description" content="80.000+ zenders en 200.000+ films in 4K UHD. Activatie binnen 5 minuten via WhatsApp." />
-    <meta name="twitter:image" content="https://beehoster.net/logo.svg" />
+    <meta name="twitter:image" content="https://beehoster.net/logo.png" />
 
     <script type="application/ld+json">
     {
@@ -31,14 +65,14 @@
           "@id": "https://beehoster.net/#organization",
           "name": "BEEHOSTER",
           "url": "https://beehoster.net/",
-          "logo": "https://beehoster.net/logo.svg",
+          "logo": "https://beehoster.net/logo.png",
           "sameAs": [
             "https://www.instagram.com/beehoster",
             "https://www.facebook.com/beehoster.net"
           ],
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+447832486269",
+            "telephone": "+447414662070",
             "contactType": "customer service",
             "availableLanguage": ["nl", "en"]
           }
@@ -58,7 +92,7 @@
             {
               "@type": "Question",
               "name": "Hoe bestel ik een abonnement?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Alles loopt via WhatsApp. Tik op een bestelknop en er opent een chat met ons op +44 7832 486269, met je gekozen pakket al in het bericht. Wij bevestigen de prijs, jij betaalt zoals het jou uitkomt en je login komt terug in dezelfde chat." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Alles loopt via WhatsApp. Tik op een bestelknop en er opent een chat met ons op +44 7414 662070, met je gekozen pakket al in het bericht. Wij bevestigen de prijs, jij betaalt zoals het jou uitkomt en je login komt terug in dezelfde chat." }
             },
             {
               "@type": "Question",
