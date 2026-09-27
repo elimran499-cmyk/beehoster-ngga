@@ -321,6 +321,7 @@ export const Pricing: React.FC = () => {
                 {/* CTA — straight into WhatsApp with the chosen pack, tier and
                     aantal apparaten already written in the message */}
                 <a
+                  data-cta="order"
                   href={whatsAppLink(
                     `Hoi BEEHOSTER! Ik wil graag het pakket ${activeTier.name} ${pack.label} bestellen ` +
                       `voor ${devices} ${devices === 1 ? 'apparaat' : 'apparaten'} (${formatPrice(price)}). ` +
